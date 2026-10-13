@@ -1,0 +1,912 @@
+{
+  "base": {
+    "n": 100,
+    "accuracy": 0.44,
+    "macro_f1": 0.44260637370219913,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.2807017543859649,
+        "recall": 0.8,
+        "f1": 0.41558441558441556,
+        "support": 20
+      },
+      "objective": {
+        "precision": 0.5454545454545454,
+        "recall": 0.3,
+        "f1": 0.3870967741935483,
+        "support": 20
+      },
+      "methods": {
+        "precision": 0.5833333333333334,
+        "recall": 0.35,
+        "f1": 0.4375,
+        "support": 20
+      },
+      "results": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5,
+        "f1": 0.588235294117647,
+        "support": 20
+      },
+      "conclusions": {
+        "precision": 0.8333333333333334,
+        "recall": 0.25,
+        "f1": 0.3846153846153846,
+        "support": 20
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 16,
+        "objective": 4,
+        "methods": 0,
+        "results": 0,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 11,
+        "objective": 6,
+        "methods": 1,
+        "results": 1,
+        "conclusions": 1,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 11,
+        "objective": 1,
+        "methods": 7,
+        "results": 1,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 7,
+        "objective": 0,
+        "methods": 3,
+        "results": 10,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 12,
+        "objective": 0,
+        "methods": 1,
+        "results": 2,
+        "conclusions": 5,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 0.005625006451737136,
+      "p95": 0.008424398401984945
+    },
+    "input_truncated_count": 0
+  },
+  "adapted": {
+    "n": 100,
+    "accuracy": 0.7,
+    "macro_f1": 0.6950001682216508,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.6086956521739131,
+        "recall": 0.7,
+        "f1": 0.6511627906976744,
+        "support": 20
+      },
+      "objective": {
+        "precision": 0.5555555555555556,
+        "recall": 0.5,
+        "f1": 0.5263157894736842,
+        "support": 20
+      },
+      "methods": {
+        "precision": 0.8181818181818182,
+        "recall": 0.9,
+        "f1": 0.8571428571428572,
+        "support": 20
+      },
+      "results": {
+        "precision": 0.8095238095238095,
+        "recall": 0.85,
+        "f1": 0.8292682926829269,
+        "support": 20
+      },
+      "conclusions": {
+        "precision": 0.6875,
+        "recall": 0.55,
+        "f1": 0.6111111111111112,
+        "support": 20
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 14,
+        "objective": 4,
+        "methods": 0,
+        "results": 0,
+        "conclusions": 2,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 7,
+        "objective": 10,
+        "methods": 2,
+        "results": 0,
+        "conclusions": 1,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 0,
+        "objective": 0,
+        "methods": 18,
+        "results": 0,
+        "conclusions": 2,
+        "invalid": 0
+      },
+      "results": {
+        "background": 0,
+        "objective": 1,
+        "methods": 2,
+        "results": 17,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 2,
+        "objective": 3,
+        "methods": 0,
+        "results": 4,
+        "conclusions": 11,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 0.20318750466685742,
+      "p95": 0.2212149069237057
+    },
+    "input_truncated_count": 0
+  },
+  "accuracy_delta": 0.26,
+  "paired_accuracy_delta_ci95": [
+    0.15151515151515152,
+    0.37002835051546373
+  ],
+  "bootstrap_unit": "abstract",
+  "bootstrap_groups": 96,
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 2000,
+  "changes": {
+    "improved": 32,
+    "regressed": 6,
+    "unchanged": 62
+  },
+  "examples": [
+    {
+      "id": "24229362-14",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24248037-05",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24252596-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24256699-02",
+      "gold": "results",
+      "base": "background",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24286967-06",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24333184-03",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24359521-02",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24374549-03",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24386900-09",
+      "gold": "results",
+      "base": "background",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24407163-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24415509-02",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24429202-02",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24439932-14",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24467672-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24501162-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24507091-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24508922-04",
+      "gold": "background",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24529671-01",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24568271-11",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24569031-01",
+      "gold": "background",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-02",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-04",
+      "gold": "results",
+      "base": "methods",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "24577287-07",
+      "gold": "conclusions",
+      "base": "conclusions",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24594421-02",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24625934-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24628987-02",
+      "gold": "results",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24655119-00",
+      "gold": "background",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24682026-07",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24706369-00",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24740826-02",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24748630-00",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24754529-06",
+      "gold": "results",
+      "base": "background",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "24760248-00",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24768221-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24785925-02",
+      "gold": "background",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24825641-16",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24825805-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24838215-01",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24853922-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24876261-01",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24877146-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24880843-05",
+      "gold": "methods",
+      "base": "objective",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24889213-15",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24912060-01",
+      "gold": "objective",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24934544-02",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24942481-13",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24955450-02",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24967362-00",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24981461-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25002367-08",
+      "gold": "conclusions",
+      "base": "conclusions",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "25005346-11",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25011722-14",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25016303-02",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25040840-04",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25054390-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25065337-06",
+      "gold": "results",
+      "base": "methods",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "25083980-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25168034-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25187119-00",
+      "gold": "conclusions",
+      "base": "methods",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25195059-00",
+      "gold": "objective",
+      "base": "conclusions",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25236187-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25236611-09",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25239078-12",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25240548-00",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "25248446-05",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25256813-10",
+      "gold": "conclusions",
+      "base": "conclusions",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25270861-07",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25275368-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25286173-01",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25313586-00",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25332466-09",
+      "gold": "conclusions",
+      "base": "conclusions",
+      "adapted": "objective",
+      "change": "regressed"
+    },
+    {
+      "id": "25341169-11",
+      "gold": "conclusions",
+      "base": "conclusions",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25355940-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25358450-02",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25380743-13",
+      "gold": "results",
+      "base": "background",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "25397817-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25431855-07",
+      "gold": "results",
+      "base": "background",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "25444803-12",
+      "gold": "results",
+      "base": "background",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "25512675-11",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25532604-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25532604-13",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25575084-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25580087-05",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25580087-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25587090-09",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25612789-02",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25620670-00",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25647781-07",
+      "gold": "results",
+      "base": "background",
+      "adapted": "results",
+      "change": "improved"
+    },
+    {
+      "id": "25654309-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25845088-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25882438-01",
+      "gold": "objective",
+      "base": "objective",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25967269-12",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25991758-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25993609-01",
+      "gold": "objective",
+      "base": "background",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26021224-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26054142-04",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26143666-14",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "26180474-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26284719-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26398071-00",
+      "gold": "background",
+      "base": "background",
+      "adapted": "conclusions",
+      "change": "regressed"
+    }
+  ],
+  "provenance": {
+    "evidence_kind": "classical_baseline",
+    "models": [
+      "keyword-rules",
+      "tfidf-logistic-regression"
+    ],
+    "prompt_version": "pubmed-rct-sentence-role-v1",
+    "dataset_sha256": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185",
+    "sample_limit": 100,
+    "seed": 42,
+    "environment": {
+      "python": "3.12.15",
+      "platform": "macOS-15.4.1-arm64-arm-64bit",
+      "git_commit": null
+    },
+    "metadata": {}
+  },
+  "retention": null,
+  "release_gate": {
+    "pass": false,
+    "reasons": [
+      "Classical baselines cannot establish LoRA readiness"
+    ]
+  }
+}

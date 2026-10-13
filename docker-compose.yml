@@ -1,0 +1,8 @@
+services:
+  demo:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      HEALTHCARE_LORA_BACKEND: baseline
+    volumes:
+      - ./models:/app/models:ro

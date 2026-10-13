@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "tiny random local model; no domain-performance claim",
+  "trainable_parameters": 256,
+  "total_parameters": 12288,
+  "training_seconds": 0.4449131609999313,
+  "packages": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.52.4",
+    "peft": "0.15.2",
+    "trl": "0.19.1",
+    "datasets": "3.6.0"
+  }
+}

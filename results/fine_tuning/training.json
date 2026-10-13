@@ -1,0 +1,68 @@
+{
+  "evidence_kind": "real_lora_training",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "resolved_model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "prompt_version": "pubmed-rct-sentence-role-v1",
+  "max_length": 512,
+  "config": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 0.0001,
+    "epochs": 1,
+    "max_length": 512,
+    "seed": 42,
+    "batch_size": 1,
+    "gradient_accumulation": 4,
+    "gradient_checkpointing": true,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "train_limit": 100,
+    "validation_limit": 50,
+    "device": "auto",
+    "qlora": false,
+    "output": "artifacts/mac-smoke",
+    "tracking_uri": "sqlite:///mlflow.db"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "git_commit": null
+  },
+  "device": "cpu",
+  "mlflow_run_id": "08eec78ebcc1457ebea3157851b10134",
+  "duration_seconds": 300.0615246699999,
+  "parameter_counts": {
+    "trainable": 540672,
+    "total": 494573440
+  },
+  "validation": {
+    "eval_loss": 0.8096122741699219,
+    "eval_runtime": 45.0856,
+    "eval_samples_per_second": 1.109,
+    "eval_steps_per_second": 1.109
+  },
+  "selection_metric": "validation_loss",
+  "best_checkpoint": "artifacts/mac-smoke/checkpoints/checkpoint-25",
+  "best_validation_loss": 0.8096122741699219,
+  "truncation_counts": {
+    "train": 0,
+    "validation": 0
+  },
+  "source_hashes": {
+    "train": "276bf2f42f868ec15570d7227c602be9a317e0523ec238c6baa82dcc2b6744c6",
+    "validation": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185"
+  },
+  "packages": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.52.4",
+    "peft": "0.15.2",
+    "trl": "0.19.1",
+    "datasets": "3.6.0"
+  }
+}

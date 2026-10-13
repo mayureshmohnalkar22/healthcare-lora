@@ -1,0 +1,24 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "learning_rate": 0.0001,
+  "epochs": 1,
+  "max_length": 512,
+  "seed": 42,
+  "batch_size": 1,
+  "gradient_accumulation": 4,
+  "gradient_checkpointing": true,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "train_limit": 2000,
+  "validation_limit": 500,
+  "device": "auto",
+  "qlora": false,
+  "output": "models/rank-8",
+  "tracking_uri": "sqlite:///mlflow.db"
+}

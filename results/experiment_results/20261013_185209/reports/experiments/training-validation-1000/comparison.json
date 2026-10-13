@@ -1,0 +1,7469 @@
+{
+  "base": {
+    "n": 1000,
+    "accuracy": 0.222,
+    "macro_f1": 0.11029825891762954,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.36363636363636365,
+        "recall": 0.02,
+        "f1": 0.03791469194312796,
+        "support": 200
+      },
+      "objective": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 200
+      },
+      "methods": {
+        "precision": 0.9047619047619048,
+        "recall": 0.095,
+        "f1": 0.1719457013574661,
+        "support": 200
+      },
+      "results": {
+        "precision": 0.20621761658031088,
+        "recall": 0.995,
+        "f1": 0.34163090128755363,
+        "support": 200
+      },
+      "conclusions": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 200
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 4,
+        "objective": 0,
+        "methods": 2,
+        "results": 194,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 200,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 5,
+        "objective": 1,
+        "methods": 19,
+        "results": 175,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 1,
+        "objective": 0,
+        "methods": 0,
+        "results": 199,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 1,
+        "objective": 2,
+        "methods": 0,
+        "results": 197,
+        "conclusions": 0,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 93.26702100224793,
+      "p95": 252.98166935899633
+    },
+    "input_truncated_count": 0
+  },
+  "adapted": {
+    "n": 1000,
+    "accuracy": 0.73,
+    "macro_f1": 0.7281257297017281,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.548,
+        "recall": 0.685,
+        "f1": 0.6088888888888889,
+        "support": 200
+      },
+      "objective": {
+        "precision": 0.7094594594594594,
+        "recall": 0.525,
+        "f1": 0.603448275862069,
+        "support": 200
+      },
+      "methods": {
+        "precision": 0.8088888888888889,
+        "recall": 0.91,
+        "f1": 0.8564705882352941,
+        "support": 200
+      },
+      "results": {
+        "precision": 0.8316831683168316,
+        "recall": 0.84,
+        "f1": 0.835820895522388,
+        "support": 200
+      },
+      "conclusions": {
+        "precision": 0.7885714285714286,
+        "recall": 0.69,
+        "f1": 0.7359999999999999,
+        "support": 200
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 137,
+        "objective": 40,
+        "methods": 8,
+        "results": 1,
+        "conclusions": 14,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 74,
+        "objective": 105,
+        "methods": 13,
+        "results": 2,
+        "conclusions": 6,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 5,
+        "objective": 2,
+        "methods": 182,
+        "results": 8,
+        "conclusions": 3,
+        "invalid": 0
+      },
+      "results": {
+        "background": 1,
+        "objective": 0,
+        "methods": 17,
+        "results": 168,
+        "conclusions": 14,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 33,
+        "objective": 1,
+        "methods": 5,
+        "results": 23,
+        "conclusions": 138,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 106.62772950308863,
+      "p95": 233.9074292009172
+    },
+    "input_truncated_count": 0
+  },
+  "accuracy_delta": 0.508,
+  "paired_accuracy_delta_ci95": [
+    0.4746747344857186,
+    0.5420746091007848
+  ],
+  "bootstrap_unit": "abstract",
+  "bootstrap_groups": 830,
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 2000,
+  "changes": {
+    "unchanged": 430,
+    "improved": 539,
+    "regressed": 31
+  },
+  "examples": [
+    {
+      "id": "24219891-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24220044-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24220704-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24220704-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24228533-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24228747-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24229362-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24229362-15",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24231627-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24231627-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24232445-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24232445-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24233244-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24236828-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24236828-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24239213-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24240384-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24245738-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24245844-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24246588-16",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24247476-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24248037-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24248037-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24252596-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24252663-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24253758-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24254035-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24255597-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24256139-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24256699-02",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24260129-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24261345-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24261345-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24263289-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24263289-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24265330-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24268433-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24273298-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24273298-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24275838-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24275838-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24279519-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24279519-15",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24280465-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24283282-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24283282-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24286456-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24286967-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24286967-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24286967-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24289224-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24289490-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24290286-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24290345-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24291054-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24291054-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24297959-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24300843-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24301456-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24302090-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24302090-16",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24308282-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24308282-07",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24308572-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24308572-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24311384-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24313446-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24314123-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24314835-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24315572-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24315572-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24316262-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24316262-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24316517-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24317208-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24322060-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24324379-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24330605-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24330983-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24333184-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24334216-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24334216-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24334216-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24337154-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24337884-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24341820-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24342196-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24342495-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24343370-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24346989-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24350416-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24357423-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24359036-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24359432-10",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24359521-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24359618-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24364223-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24364223-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24365274-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24368867-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24368867-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24373326-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24374549-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24377213-25",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24377217-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24380989-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24382030-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24382088-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24382782-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24383406-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24384646-05",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24386900-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24386900-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24388868-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24393548-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24394686-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24397361-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24397879-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24398758-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24399554-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24401159-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24401802-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24401802-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24402740-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24402825-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24407163-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24411718-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24415509-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24418801-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24420746-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24423077-11",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24423298-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24427264-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24428097-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24428097-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24429164-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24429202-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24430407-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24432677-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24433609-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24435063-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24438460-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24438460-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24439238-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24439655-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24439932-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24439932-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24440105-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24441734-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24444682-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24445098-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24447053-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24447332-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24448652-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24456999-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24460292-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24460292-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24461364-07",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24461364-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24461523-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24461612-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24462735-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24463657-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24463662-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24467642-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24467642-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24467672-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24468198-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24469141-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24471325-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24472058-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24472058-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24472401-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24473367-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24473367-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24473367-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24474302-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24474302-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24474383-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24480956-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24486366-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24490645-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24491463-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24494594-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24494737-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24495287-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24497345-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24501162-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24502959-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24507091-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24508103-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24508922-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24515619-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24516645-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24517298-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24520784-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24524414-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24524414-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24525654-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24529671-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24531987-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24531987-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24532523-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24534413-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24535654-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24548447-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24551191-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24552184-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24552184-05",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24556040-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24557989-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24557989-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24561752-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24562806-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24565092-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24565123-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24565123-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24567515-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24568271-11",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24569031-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24572452-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24573909-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24574085-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24576874-04",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24576874-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24577287-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24581596-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24582019-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24582162-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24582273-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24582868-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24582914-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24582914-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24583294-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24586327-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24587337-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24592578-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24592984-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24594421-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24594421-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24594421-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24595505-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24596360-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24596458-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24596458-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24597620-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24597620-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24601174-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24601857-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24601857-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24602137-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24604881-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24607003-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24607004-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24607046-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24607046-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24607046-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24612764-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24613271-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24613271-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24615500-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24615500-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24615684-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24618837-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24619321-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24621686-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24625934-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24625934-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24627290-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24628705-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24628987-02",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24628987-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24638843-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24640441-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24641883-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24643406-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24646123-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24646123-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24655119-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24655411-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24655871-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24655978-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24659510-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24660827-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24665578-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24666633-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24666633-08",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24666696-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24666774-05",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24670297-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24671165-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24671361-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24671453-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24671453-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24673675-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24675168-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24676798-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24679695-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24682026-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24682026-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24684165-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24685956-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24686107-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24686347-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24700992-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24702612-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24702629-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24702835-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24702835-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24704117-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24705855-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24706369-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24708597-10",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24708597-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24708818-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24708851-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24709364-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24717011-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24720885-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24720885-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24721240-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24721460-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24721460-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24723041-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24725582-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24725787-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24726378-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24732169-02",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24733807-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24736370-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24736370-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24737198-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24740826-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24742739-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24742970-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24745013-01",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24747867-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24748161-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24748630-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24750973-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24753225-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24754203-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24754529-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24755125-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24756128-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24758078-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24758510-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24760248-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24760465-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24763910-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24767575-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24768221-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24770617-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24774442-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24781571-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24785925-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24785925-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24786613-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24792106-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24796059-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24797938-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24797938-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24797938-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24798104-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24798104-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24799543-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24799543-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24800381-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24800381-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24800381-05",
+      "gold": "methods",
+      "base": "objective",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24800582-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24803644-14",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24804638-11",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24806623-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24809408-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24809838-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24811963-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24813065-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24813065-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24814320-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24815101-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24816689-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24816689-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24816691-13",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24820498-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24823461-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24824050-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24824051-03",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24825641-16",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24825805-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24825870-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24831394-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24831438-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24833327-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24835379-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24835757-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24836474-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24837113-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24837113-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24838215-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24838844-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24840511-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24841107-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24842558-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24849439-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24853275-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24853275-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24853809-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24853809-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24853922-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24853922-17",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24858202-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24858202-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24861503-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24862029-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24863954-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24864639-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24866279-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24866311-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24866985-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24866985-04",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24867013-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24870622-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24872002-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24872261-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24874481-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "24875964-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24876261-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24876261-09",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24877146-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24878085-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24878589-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24880843-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24880956-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24884501-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24885354-15",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24885486-13",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24885486-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24885549-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24886034-08",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24886098-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24886338-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24889213-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24893602-01",
+      "gold": "background",
+      "base": "methods",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24893655-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24895878-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24898680-07",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24899755-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24902920-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24907224-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24908241-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24912060-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24912060-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24913488-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24913488-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24920942-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24923683-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24924991-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24925124-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24928191-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24934544-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24934544-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24934646-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24935020-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24935363-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24937907-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24939437-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24939678-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24941010-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24941286-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24942481-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24946631-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24951828-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24952740-12",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24952836-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24952855-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24955450-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24960387-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24962864-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24966672-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24967362-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24973609-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24974051-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24977456-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24980066-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24981461-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24981461-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24983434-03",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24983434-18",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24983709-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24983748-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24985779-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24986722-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24988955-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24995901-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24995901-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24996223-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24996984-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24997003-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24999963-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25002101-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25002101-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25002367-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25003731-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25005346-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25006118-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25006633-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25007091-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25010236-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25010236-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25010883-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25011722-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25011946-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25012446-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25012446-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25012765-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25014057-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25016303-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25022777-05",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25027157-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25027180-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25029424-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25033137-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25036417-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25037201-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25037883-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25038064-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25038064-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25038486-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25040180-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25040840-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25041312-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25042199-11",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25045152-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25046949-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25048075-03",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25050589-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25050898-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25052076-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25054390-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25054390-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25054392-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25054836-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25056567-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25057153-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25058216-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25059523-02",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25060683-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25062129-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25063041-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25064019-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25065337-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25065337-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25065535-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25069770-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25070960-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25074771-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25079934-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25081673-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25083980-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25084784-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25084784-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25084967-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25085298-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25086490-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25087835-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25093868-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25101966-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25103781-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25109511-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25111236-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25112084-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25112084-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25113132-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25115430-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25115430-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25115507-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25116277-05",
+      "gold": "methods",
+      "base": "background",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25118091-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25118091-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25118263-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25118967-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25122979-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25124510-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25127483-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25127483-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25130704-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25134117-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25144818-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25146745-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25147092-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25151027-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25152289-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25156622-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25157013-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25157767-06",
+      "gold": "results",
+      "base": "background",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25157964-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25158846-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25161019-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25161024-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25161024-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25161823-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25168034-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25168034-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25168034-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25171125-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25175124-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25175762-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25176289-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25179753-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25179753-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25183726-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25187119-00",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25187436-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25188774-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25192478-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25195059-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25195059-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25198265-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25200354-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25208597-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25209306-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25212703-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25213566-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25213578-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25216464-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25216556-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25216962-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25217122-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25217122-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25218610-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25219423-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25223462-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25224610-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25224610-14",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "25231884-03",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25233649-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25233649-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25236187-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25236397-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25236611-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25236611-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25238659-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25239078-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25240168-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25240548-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25242045-17",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25245767-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25248446-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25248446-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25248446-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25248497-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25249320-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25252721-03",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25252721-10",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25253679-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25256183-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25256813-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25257064-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25257928-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25259787-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25260762-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25262224-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25266425-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25268968-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25268968-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25270758-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25270861-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25271544-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25272534-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25272534-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25274048-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25275368-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25275368-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25277144-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25281275-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25281300-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25282285-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25286173-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25287828-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25288340-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25294250-09",
+      "gold": "conclusions",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25296647-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25297681-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25298352-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25300706-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25301035-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25301045-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25304191-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25304255-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25304255-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25304298-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25307295-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25311606-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25311606-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25311881-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25313586-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25315498-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25316259-09",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25316430-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25320199-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25323260-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25323890-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25326007-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25329583-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25332329-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25332329-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25332466-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25337988-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25337988-19",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25337988-21",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25339155-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25341169-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25342896-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25344483-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25355940-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25355940-09",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25358221-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25358450-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25361981-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25363099-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25363108-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25365717-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25374216-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25375075-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25375851-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25376617-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25380743-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25384603-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25391865-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25395354-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25397817-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25397864-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25397864-10",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25398689-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25398967-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25401779-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25401779-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25404142-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25406780-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25407792-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25409776-16",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25410607-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25411159-03",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25412095-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25412095-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25413071-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25416724-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25416724-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25418079-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25419615-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25419615-16",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25422589-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25423041-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25423041-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25425504-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25426808-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25426896-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25431855-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25431855-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25433674-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25434316-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25436661-02",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25438965-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25439084-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25444222-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25444803-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25449059-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25449059-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25450993-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25457902-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25457902-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25457929-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25458200-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25458326-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25458411-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25458411-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25464260-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25466509-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25467848-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25469829-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25470228-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25474232-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25475358-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25480457-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25481336-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25481453-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25482145-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25482145-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25486542-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25488897-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25490803-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25490803-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25491026-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25491243-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25491714-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25494594-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25499341-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25500097-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25511185-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25511354-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25512675-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25516028-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25516195-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25516462-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25520340-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25522389-06",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25525672-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25525672-21",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25532604-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25532604-13",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25535265-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25539281-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25539805-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25544294-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25544294-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25544955-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25545757-01",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25545858-07",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25552402-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25552616-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25555183-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25571684-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25573393-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25574111-01",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25575084-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25575262-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25575599-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25576320-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25579777-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25579777-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25580087-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25580087-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25581505-03",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25582984-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25583753-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25587090-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25591799-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25595151-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25596659-12",
+      "gold": "background",
+      "base": "background",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25605838-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25605838-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25607118-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25607594-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25607594-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25609368-16",
+      "gold": "conclusions",
+      "base": "objective",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25610500-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25610500-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25612789-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25616607-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25617561-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25620452-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25620670-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25621943-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25626984-04",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25629741-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25631224-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25633037-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25636135-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25636519-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25644342-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25646321-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25647781-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25650633-08",
+      "gold": "conclusions",
+      "base": "objective",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25653199-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25653511-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25653511-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25654309-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25658223-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25660917-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25667159-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25668198-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25675651-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25684224-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25687878-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25688781-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25693004-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25701561-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25701561-13",
+      "gold": "background",
+      "base": "methods",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25707624-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25714214-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25715353-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25719937-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25724455-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25731690-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25736132-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25739317-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25739317-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25740265-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25740265-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25741642-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25741642-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25741969-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25741969-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25754845-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25758270-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25758273-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25761587-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25773557-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25773607-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25776532-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25776532-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25776953-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25785695-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25785695-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25797757-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25818495-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25831464-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25840501-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25845088-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25850425-01",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "25854017-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25854021-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25862350-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25862350-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25863562-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25872617-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25872802-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25877711-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25877784-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25880068-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25881753-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25882438-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25884724-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25891548-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25891548-06",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25897039-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25898472-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25907157-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25907157-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25908066-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25921382-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25927536-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25933031-06",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25938633-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25945691-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25945691-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25946647-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25965717-03",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25967269-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25970252-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25970252-04",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25975474-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25976288-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25976288-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25980660-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25985806-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25991758-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25991758-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25993609-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26003882-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26006702-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26006702-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26008626-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26021224-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26021224-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26026737-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "26026737-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26028283-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26040181-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26054142-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26057285-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26079800-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "26093872-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "26115073-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26115386-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26121788-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "26121788-08",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26121788-11",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26122282-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26143666-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26150444-01",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26150444-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26160211-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26160211-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26180474-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26182736-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "26194675-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26196084-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26223721-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "26227188-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26227188-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26227188-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "26227188-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26241253-08",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26258311-03",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "26258318-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26258318-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "26267983-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26284719-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26374429-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "26398071-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "26398071-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26434249-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26434249-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26437529-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26437529-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    }
+  ],
+  "provenance": {
+    "evidence_kind": "real_model",
+    "models": [
+      "base-llm",
+      "lora-adapter"
+    ],
+    "prompt_version": "pubmed-rct-sentence-role-v1",
+    "dataset_sha256": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185",
+    "sample_limit": 1000,
+    "seed": 42,
+    "environment": {
+      "python": "3.12.15",
+      "platform": "macOS-15.4.1-arm64-arm-64bit",
+      "git_commit": null
+    },
+    "metadata": {
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "adapter": "models/training-run/adapter"
+    }
+  },
+  "retention": {
+    "base_accuracy": 0.15,
+    "adapted_accuracy": 0.5,
+    "n": 20,
+    "suite_sha256": "130219e43caedd22fdf3d3b879ad751c5ae1841d4ea233eaf0a949892863b24f",
+    "examples": [
+      {
+        "id": "retention-00",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 7 + 5 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "7 + 5 = 12",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-01",
+        "expected": "5",
+        "base": {
+          "raw_output": "The result of 9 - 4 is 5.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "7",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-02",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 3 * 4 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "12",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-03",
+        "expected": "4",
+        "base": {
+          "raw_output": "The result of 20 divided by 5 is 4.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "4.0",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-04",
+        "expected": "Paris",
+        "base": {
+          "raw_output": "The capital of France is Paris.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Paris",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-05",
+        "expected": "Tokyo",
+        "base": {
+          "raw_output": "The capital of Japan is Tokyo.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Tokyo",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-06",
+        "expected": "Rome",
+        "base": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-07",
+        "expected": "cold",
+        "base": {
+          "raw_output": "cold",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "cold",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-08",
+        "expected": "right",
+        "base": {
+          "raw_output": "The term \"left\" in this context refers to the first element or position in a sequence or list. To find the",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "left \u53cd\u8f6c\u3002",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-09",
+        "expected": "cats",
+        "base": {
+          "raw_output": "The plural form of \"cat\" is \"cats\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "cats",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-10",
+        "expected": "hello",
+        "base": {
+          "raw_output": "hello",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "hello",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-11",
+        "expected": "a",
+        "base": {
+          "raw_output": "a",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "apple",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-12",
+        "expected": "g",
+        "base": {
+          "raw_output": "The last letter of \"dog\" is \"d\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "dog",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-13",
+        "expected": "9",
+        "base": {
+          "raw_output": "The larger of two numbers is simply the one that comes first when compared in value. Therefore, for the given problem where",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The larger of two numbers is returned.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-14",
+        "expected": "3",
+        "base": {
+          "raw_output": "The smaller number between 6 and 3 is 3.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The smaller number is 3.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-15",
+        "expected": "7",
+        "base": {
+          "raw_output": "There is no specific number of days in a week that is universally agreed upon or used consistently across all cultures and languages.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Sure! Here's the number of days in a week:\n\n- 7 days\n\nThis is because there are exactly seven",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-16",
+        "expected": "12",
+        "base": {
+          "raw_output": "In a standard calendar system, there are 12 months in a year. This is because the Gregorian calendar was",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "12",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-17",
+        "expected": "8",
+        "base": {
+          "raw_output": "The next number in the sequence 2, 4, 6 is 8.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "8",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-18",
+        "expected": "blue",
+        "base": {
+          "raw_output": "The word \"blue\" is present in the given list of words: red, blue, green. Therefore, the answer",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "blue",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-19",
+        "expected": "yes",
+        "base": {
+          "raw_output": "Yes. Water is indeed a liquid at room temperature (approximately 20\u00b0C or 68\u00b0F). It has",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Yes.",
+          "correct": true
+        }
+      }
+    ],
+    "scope": "authored strict-answer/format smoke suite; not a standardized general-capability benchmark"
+  },
+  "release_gate": {
+    "pass": false,
+    "reasons": [
+      "Recall regression exceeds threshold: results"
+    ],
+    "policy": {
+      "min_accuracy_gain": 0.01,
+      "max_class_recall_drop": 0.05,
+      "max_retention_drop": 0.05
+    }
+  }
+}

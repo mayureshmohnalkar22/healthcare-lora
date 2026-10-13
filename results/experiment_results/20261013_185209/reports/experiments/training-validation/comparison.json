@@ -1,0 +1,1169 @@
+{
+  "base": {
+    "n": 100,
+    "accuracy": 0.21,
+    "macro_f1": 0.08627450980392157,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 20
+      },
+      "objective": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 20
+      },
+      "methods": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "support": 20
+      },
+      "results": {
+        "precision": 0.20202020202020202,
+        "recall": 1.0,
+        "f1": 0.33613445378151263,
+        "support": 20
+      },
+      "conclusions": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 20
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 20,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 20,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 0,
+        "objective": 0,
+        "methods": 1,
+        "results": 19,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 20,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 20,
+        "conclusions": 0,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 147.09320850670338,
+      "p95": 229.304479444545
+    },
+    "input_truncated_count": 0
+  },
+  "adapted": {
+    "n": 100,
+    "accuracy": 0.74,
+    "macro_f1": 0.7344870881265059,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.5833333333333334,
+        "recall": 0.7,
+        "f1": 0.6363636363636365,
+        "support": 20
+      },
+      "objective": {
+        "precision": 0.7692307692307693,
+        "recall": 0.5,
+        "f1": 0.6060606060606061,
+        "support": 20
+      },
+      "methods": {
+        "precision": 0.7407407407407407,
+        "recall": 1.0,
+        "f1": 0.851063829787234,
+        "support": 20
+      },
+      "results": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578948,
+        "support": 20
+      },
+      "conclusions": {
+        "precision": 0.7777777777777778,
+        "recall": 0.7,
+        "f1": 0.7368421052631577,
+        "support": 20
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 14,
+        "objective": 3,
+        "methods": 0,
+        "results": 0,
+        "conclusions": 3,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 7,
+        "objective": 10,
+        "methods": 3,
+        "results": 0,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 0,
+        "objective": 0,
+        "methods": 20,
+        "results": 0,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 0,
+        "objective": 0,
+        "methods": 3,
+        "results": 16,
+        "conclusions": 1,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 3,
+        "objective": 0,
+        "methods": 1,
+        "results": 2,
+        "conclusions": 14,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 126.39981200481998,
+      "p95": 177.57932920576417
+    },
+    "input_truncated_count": 0
+  },
+  "accuracy_delta": 0.53,
+  "paired_accuracy_delta_ci95": [
+    0.4174757281553398,
+    0.6391752577319587
+  ],
+  "bootstrap_unit": "abstract",
+  "bootstrap_groups": 96,
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 2000,
+  "changes": {
+    "improved": 57,
+    "unchanged": 39,
+    "regressed": 4
+  },
+  "examples": [
+    {
+      "id": "24229362-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24248037-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24252596-05",
+      "gold": "methods",
+      "base": "methods",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24256699-02",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24286967-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24333184-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24359521-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24374549-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24386900-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24407163-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24415509-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24429202-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24439932-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24467672-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24501162-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24507091-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24508922-04",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24529671-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24568271-11",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24569031-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24577287-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24594421-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24625934-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24628987-02",
+      "gold": "results",
+      "base": "results",
+      "adapted": "methods",
+      "change": "regressed"
+    },
+    {
+      "id": "24655119-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24682026-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24706369-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24740826-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24748630-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24754529-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24760248-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24768221-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24785925-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24825641-16",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24825805-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24838215-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24853922-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24876261-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24877146-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24880843-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "24889213-15",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24912060-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24934544-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24942481-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "24955450-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "24967362-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24981461-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25002367-08",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25005346-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "methods",
+      "change": "unchanged"
+    },
+    {
+      "id": "25011722-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25016303-02",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25040840-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25054390-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25065337-06",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25083980-05",
+      "gold": "results",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "regressed"
+    },
+    {
+      "id": "25168034-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25187119-00",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25195059-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25236187-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25236611-09",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25239078-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25240548-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25248446-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25256813-10",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25270861-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25275368-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25286173-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25313586-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25332466-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25341169-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25355940-07",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25358450-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25380743-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25397817-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25431855-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25444803-12",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25512675-11",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25532604-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25532604-13",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25575084-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25580087-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25580087-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25587090-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25612789-02",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25620670-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25647781-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25654309-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25845088-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25882438-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25967269-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "improved"
+    },
+    {
+      "id": "25991758-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "25993609-01",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "26021224-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26054142-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "26143666-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "26180474-13",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26284719-10",
+      "gold": "results",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "26398071-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    }
+  ],
+  "provenance": {
+    "evidence_kind": "real_model",
+    "models": [
+      "base-llm",
+      "lora-adapter"
+    ],
+    "prompt_version": "pubmed-rct-sentence-role-v1",
+    "dataset_sha256": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185",
+    "sample_limit": 100,
+    "seed": 42,
+    "environment": {
+      "python": "3.12.15",
+      "platform": "macOS-15.4.1-arm64-arm-64bit",
+      "git_commit": null
+    },
+    "metadata": {
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "adapter": "models/training-run/adapter"
+    }
+  },
+  "retention": {
+    "base_accuracy": 0.15,
+    "adapted_accuracy": 0.5,
+    "n": 20,
+    "suite_sha256": "130219e43caedd22fdf3d3b879ad751c5ae1841d4ea233eaf0a949892863b24f",
+    "examples": [
+      {
+        "id": "retention-00",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 7 + 5 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "7 + 5 = 12",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-01",
+        "expected": "5",
+        "base": {
+          "raw_output": "The result of 9 - 4 is 5.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "7",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-02",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 3 * 4 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "12",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-03",
+        "expected": "4",
+        "base": {
+          "raw_output": "The result of 20 divided by 5 is 4.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "4.0",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-04",
+        "expected": "Paris",
+        "base": {
+          "raw_output": "The capital of France is Paris.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Paris",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-05",
+        "expected": "Tokyo",
+        "base": {
+          "raw_output": "The capital of Japan is Tokyo.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Tokyo",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-06",
+        "expected": "Rome",
+        "base": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-07",
+        "expected": "cold",
+        "base": {
+          "raw_output": "cold",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "cold",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-08",
+        "expected": "right",
+        "base": {
+          "raw_output": "The term \"left\" in this context refers to the first element or position in a sequence or list. To find the",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "left \u53cd\u8f6c\u3002",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-09",
+        "expected": "cats",
+        "base": {
+          "raw_output": "The plural form of \"cat\" is \"cats\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "cats",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-10",
+        "expected": "hello",
+        "base": {
+          "raw_output": "hello",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "hello",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-11",
+        "expected": "a",
+        "base": {
+          "raw_output": "a",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "apple",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-12",
+        "expected": "g",
+        "base": {
+          "raw_output": "The last letter of \"dog\" is \"d\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "dog",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-13",
+        "expected": "9",
+        "base": {
+          "raw_output": "The larger of two numbers is simply the one that comes first when compared in value. Therefore, for the given problem where",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The larger of two numbers is returned.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-14",
+        "expected": "3",
+        "base": {
+          "raw_output": "The smaller number between 6 and 3 is 3.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The smaller number is 3.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-15",
+        "expected": "7",
+        "base": {
+          "raw_output": "There is no specific number of days in a week that is universally agreed upon or used consistently across all cultures and languages.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Sure! Here's the number of days in a week:\n\n- 7 days\n\nThis is because there are exactly seven",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-16",
+        "expected": "12",
+        "base": {
+          "raw_output": "In a standard calendar system, there are 12 months in a year. This is because the Gregorian calendar was",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "12",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-17",
+        "expected": "8",
+        "base": {
+          "raw_output": "The next number in the sequence 2, 4, 6 is 8.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "8",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-18",
+        "expected": "blue",
+        "base": {
+          "raw_output": "The word \"blue\" is present in the given list of words: red, blue, green. Therefore, the answer",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "blue",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-19",
+        "expected": "yes",
+        "base": {
+          "raw_output": "Yes. Water is indeed a liquid at room temperature (approximately 20\u00b0C or 68\u00b0F). It has",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Yes.",
+          "correct": true
+        }
+      }
+    ],
+    "scope": "authored strict-answer/format smoke suite; not a standardized general-capability benchmark"
+  },
+  "release_gate": {
+    "pass": false,
+    "reasons": [
+      "Recall regression exceeds threshold: results"
+    ],
+    "policy": {
+      "min_accuracy_gain": 0.01,
+      "max_class_recall_drop": 0.05,
+      "max_retention_drop": 0.05
+    }
+  }
+}

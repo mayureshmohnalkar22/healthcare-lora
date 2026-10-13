@@ -1,0 +1,20 @@
+{"id": "retention-00", "prompt": "Return only the result of 7 + 5.", "answer": "12", "accepted": ["12", "12."]}
+{"id": "retention-01", "prompt": "Return only the result of 9 - 4.", "answer": "5", "accepted": ["5", "5."]}
+{"id": "retention-02", "prompt": "Return only the result of 3 * 4.", "answer": "12", "accepted": ["12", "12."]}
+{"id": "retention-03", "prompt": "Return only the result of 20 / 5.", "answer": "4", "accepted": ["4", "4."]}
+{"id": "retention-04", "prompt": "Return only the capital of France.", "answer": "Paris", "accepted": ["Paris", "Paris."]}
+{"id": "retention-05", "prompt": "Return only the capital of Japan.", "answer": "Tokyo", "accepted": ["Tokyo", "Tokyo."]}
+{"id": "retention-06", "prompt": "Return only the capital of Italy.", "answer": "Rome", "accepted": ["Rome", "Rome."]}
+{"id": "retention-07", "prompt": "Return only the opposite of hot.", "answer": "cold", "accepted": ["cold", "cold."]}
+{"id": "retention-08", "prompt": "Return only the opposite of left.", "answer": "right", "accepted": ["right", "right."]}
+{"id": "retention-09", "prompt": "Return only the plural of cat.", "answer": "cats", "accepted": ["cats", "cats."]}
+{"id": "retention-10", "prompt": "Return only the lowercase version of HELLO.", "answer": "hello", "accepted": ["hello", "hello."]}
+{"id": "retention-11", "prompt": "Return only the first letter of apple.", "answer": "a", "accepted": ["a", "a."]}
+{"id": "retention-12", "prompt": "Return only the last letter of dog.", "answer": "g", "accepted": ["g", "g."]}
+{"id": "retention-13", "prompt": "Return only the larger number: 2 or 9.", "answer": "9", "accepted": ["9", "9."]}
+{"id": "retention-14", "prompt": "Return only the smaller number: 6 or 3.", "answer": "3", "accepted": ["3", "3."]}
+{"id": "retention-15", "prompt": "Return only the number of days in a week.", "answer": "7", "accepted": ["7", "7."]}
+{"id": "retention-16", "prompt": "Return only the number of months in a year.", "answer": "12", "accepted": ["12", "12."]}
+{"id": "retention-17", "prompt": "Return only the next number: 2, 4, 6.", "answer": "8", "accepted": ["8", "8."]}
+{"id": "retention-18", "prompt": "Return only the word blue from this list: red, blue, green.", "answer": "blue", "accepted": ["blue", "blue."]}
+{"id": "retention-19", "prompt": "Return only yes if water is a liquid at room temperature.", "answer": "yes", "accepted": ["yes", "yes."]}

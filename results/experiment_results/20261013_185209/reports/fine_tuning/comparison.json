@@ -1,0 +1,645 @@
+{
+  "base": {
+    "n": 25,
+    "accuracy": 0.2,
+    "macro_f1": 0.06666666666666668,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      },
+      "objective": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      },
+      "methods": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      },
+      "results": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "support": 5
+      },
+      "conclusions": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 5,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 5,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 5,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 5,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 0,
+        "objective": 0,
+        "methods": 0,
+        "results": 5,
+        "conclusions": 0,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 792.8522800000337,
+      "p95": 1121.3052560000503
+    },
+    "input_truncated_count": 0
+  },
+  "adapted": {
+    "n": 25,
+    "accuracy": 0.24,
+    "macro_f1": 0.20238095238095238,
+    "invalid_rate": 0.0,
+    "per_class": {
+      "background": {
+        "precision": 0.18181818181818182,
+        "recall": 0.4,
+        "f1": 0.25000000000000006,
+        "support": 5
+      },
+      "objective": {
+        "precision": 0.3333333333333333,
+        "recall": 0.6,
+        "f1": 0.42857142857142855,
+        "support": 5
+      },
+      "methods": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.33333333333333337,
+        "support": 5
+      },
+      "results": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      },
+      "conclusions": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 5
+      }
+    },
+    "confusion": {
+      "background": {
+        "background": 2,
+        "objective": 2,
+        "methods": 0,
+        "results": 1,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "objective": {
+        "background": 0,
+        "objective": 3,
+        "methods": 0,
+        "results": 1,
+        "conclusions": 1,
+        "invalid": 0
+      },
+      "methods": {
+        "background": 2,
+        "objective": 2,
+        "methods": 1,
+        "results": 0,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "results": {
+        "background": 5,
+        "objective": 0,
+        "methods": 0,
+        "results": 0,
+        "conclusions": 0,
+        "invalid": 0
+      },
+      "conclusions": {
+        "background": 2,
+        "objective": 2,
+        "methods": 0,
+        "results": 1,
+        "conclusions": 0,
+        "invalid": 0
+      }
+    },
+    "latency_ms": {
+      "p50": 754.5896159999756,
+      "p95": 963.1200593999893
+    },
+    "input_truncated_count": 0
+  },
+  "accuracy_delta": 0.04,
+  "paired_accuracy_delta_ci95": [
+    -0.24,
+    0.32
+  ],
+  "bootstrap_unit": "abstract",
+  "bootstrap_groups": 25,
+  "bootstrap_seed": 42,
+  "bootstrap_resamples": 2000,
+  "changes": {
+    "unchanged": 14,
+    "regressed": 5,
+    "improved": 6
+  },
+  "examples": [
+    {
+      "id": "24286967-06",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24333184-03",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24386900-09",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "24415509-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24439932-14",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24568271-11",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "24569031-01",
+      "gold": "background",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24577287-04",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "24740826-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "24748630-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24768221-05",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "24825641-16",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "24877146-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "24942481-13",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "results",
+      "change": "unchanged"
+    },
+    {
+      "id": "24981461-04",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25236187-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25240548-00",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "objective",
+      "change": "improved"
+    },
+    {
+      "id": "25270861-07",
+      "gold": "methods",
+      "base": "results",
+      "adapted": "methods",
+      "change": "improved"
+    },
+    {
+      "id": "25332466-09",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "background",
+      "change": "unchanged"
+    },
+    {
+      "id": "25397817-02",
+      "gold": "objective",
+      "base": "results",
+      "adapted": "conclusions",
+      "change": "unchanged"
+    },
+    {
+      "id": "25431855-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "25532604-13",
+      "gold": "background",
+      "base": "results",
+      "adapted": "background",
+      "change": "improved"
+    },
+    {
+      "id": "25575084-12",
+      "gold": "conclusions",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    },
+    {
+      "id": "25647781-07",
+      "gold": "results",
+      "base": "results",
+      "adapted": "background",
+      "change": "regressed"
+    },
+    {
+      "id": "25654309-00",
+      "gold": "background",
+      "base": "results",
+      "adapted": "objective",
+      "change": "unchanged"
+    }
+  ],
+  "provenance": {
+    "evidence_kind": "real_model",
+    "models": [
+      "base-llm",
+      "lora-adapter"
+    ],
+    "prompt_version": "pubmed-rct-sentence-role-v1",
+    "dataset_sha256": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185",
+    "sample_limit": 25,
+    "seed": 42,
+    "environment": {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "git_commit": null
+    },
+    "metadata": {
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "adapter": "artifacts/mac-smoke/adapter"
+    }
+  },
+  "retention": {
+    "base_accuracy": 0.15,
+    "adapted_accuracy": 0.15,
+    "n": 20,
+    "suite_sha256": "130219e43caedd22fdf3d3b879ad751c5ae1841d4ea233eaf0a949892863b24f",
+    "examples": [
+      {
+        "id": "retention-00",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 7 + 5 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The result of 7 + 5 is 12.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-01",
+        "expected": "5",
+        "base": {
+          "raw_output": "The result of 9 - 4 is 5.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The result of 9 - 4 is 5.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-02",
+        "expected": "12",
+        "base": {
+          "raw_output": "The result of 3 * 4 is 12.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The result of 3 * 4 is 12.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-03",
+        "expected": "4",
+        "base": {
+          "raw_output": "The result of 20 divided by 5 is 4.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The result of 20 divided by 5 is 4.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-04",
+        "expected": "Paris",
+        "base": {
+          "raw_output": "The capital of France is Paris.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The capital of France is Paris.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-05",
+        "expected": "Tokyo",
+        "base": {
+          "raw_output": "The capital of Japan is Tokyo.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The capital of Japan is Tokyo.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-06",
+        "expected": "Rome",
+        "base": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The capital of Italy is Rome.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-07",
+        "expected": "cold",
+        "base": {
+          "raw_output": "cold",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "cold",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-08",
+        "expected": "right",
+        "base": {
+          "raw_output": "The term \"left\" in this context refers to the first element or position in a sequence or list. To find the",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The term \"left\" in this context refers to the first element or position in a sequence or list. To find the",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-09",
+        "expected": "cats",
+        "base": {
+          "raw_output": "The plural form of \"cat\" is \"cats\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The plural form of \"cat\" is \"cats\".",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-10",
+        "expected": "hello",
+        "base": {
+          "raw_output": "hello",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "hello",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-11",
+        "expected": "a",
+        "base": {
+          "raw_output": "a",
+          "correct": true
+        },
+        "adapted": {
+          "raw_output": "a",
+          "correct": true
+        }
+      },
+      {
+        "id": "retention-12",
+        "expected": "g",
+        "base": {
+          "raw_output": "The last letter of \"dog\" is \"d\".",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The last letter of \"dog\" is \"d\".",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-13",
+        "expected": "9",
+        "base": {
+          "raw_output": "The larger of two numbers is simply the one that comes first when compared in value. Therefore, for the given problem where",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The larger of two numbers is simply the one that comes first when compared in value. Therefore, for the given problem where",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-14",
+        "expected": "3",
+        "base": {
+          "raw_output": "The smaller number between 6 and 3 is 3.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The smaller number between 6 and 3 is 3.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-15",
+        "expected": "7",
+        "base": {
+          "raw_output": "There is no specific number of days in a week that is universally agreed upon or used consistently across all cultures and languages.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Sure! There are 7 days in a week.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-16",
+        "expected": "12",
+        "base": {
+          "raw_output": "In a standard calendar system, there are 12 months in a year. This is because the Gregorian calendar was",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "In a standard calendar system, there are 12 months in a year. This is because each month has exactly ",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-17",
+        "expected": "8",
+        "base": {
+          "raw_output": "The next number in the sequence 2, 4, 6 is 8.",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The next number in the sequence 2, 4, 6 is 8.",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-18",
+        "expected": "blue",
+        "base": {
+          "raw_output": "The word \"blue\" is present in the given list of words: red, blue, green. Therefore, the answer",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "The word \"blue\" is present in the given list of words: red, blue, green. Therefore, the answer",
+          "correct": false
+        }
+      },
+      {
+        "id": "retention-19",
+        "expected": "yes",
+        "base": {
+          "raw_output": "Yes. Water is indeed a liquid at room temperature (approximately 20\u00b0C or 68\u00b0F). It has",
+          "correct": false
+        },
+        "adapted": {
+          "raw_output": "Yes. Water is indeed a liquid at room temperature (approximately 20\u00b0C or 68\u00b0F). It has",
+          "correct": false
+        }
+      }
+    ],
+    "scope": "authored strict-answer/format smoke suite; not a standardized general-capability benchmark"
+  },
+  "release_gate": {
+    "pass": false,
+    "reasons": [
+      "Paired accuracy interval does not exclude zero",
+      "Recall regression exceeds threshold: results"
+    ],
+    "policy": {
+      "min_accuracy_gain": 0.01,
+      "max_class_recall_drop": 0.05,
+      "max_retention_drop": 0.05
+    }
+  }
+}

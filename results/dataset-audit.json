@@ -1,0 +1,69 @@
+{
+  "source": {
+    "source": "https://github.com/Franck-Dernoncourt/pubmed-rct",
+    "revision": "17ed2cb0590decfca0266add0c76f254f67232b4",
+    "subset": "PubMed_20k_RCT",
+    "license": "No blanket redistribution license; see upstream README and NLM copyright guidance",
+    "sha256": {
+      "train.txt": "8fda243202edd207fb61214e21f5629bba545522b921816d20d516e64d602d5b",
+      "dev.txt": "8561119a162708a87e3138103470d10781c6b94ba390183d7d6df6297a738a25",
+      "test.txt": "8511b832c1ee66b3df52df23c16ad81a69711ddd5b3a485421da3f8e9d5b44f4"
+    }
+  },
+  "seed": 42,
+  "split_policy": "official train/dev/test retained at abstract level",
+  "pmid_overlap": 0,
+  "full_abstract_content_overlap": {
+    "train:validation": 0,
+    "train:test": 0,
+    "validation:test": 0
+  },
+  "shared_normalized_sentence_counts": {
+    "train:validation": 208,
+    "train:test": 210,
+    "validation:test": 95
+  },
+  "limitations": [
+    "Shared boilerplate sentences are retained in the official benchmark",
+    "Near-duplicate abstracts and base-model pretraining contamination are not ruled out",
+    "This project uses independent sentence classification, not sequential context"
+  ],
+  "splits": {
+    "train": {
+      "rows": 180040,
+      "abstracts": 15000,
+      "classes": {
+        "objective": 13839,
+        "methods": 59353,
+        "results": 57953,
+        "conclusions": 27168,
+        "background": 21727
+      },
+      "sha256": "276bf2f42f868ec15570d7227c602be9a317e0523ec238c6baa82dcc2b6744c6"
+    },
+    "validation": {
+      "rows": 30212,
+      "abstracts": 2500,
+      "classes": {
+        "background": 3449,
+        "objective": 2376,
+        "methods": 9964,
+        "results": 9841,
+        "conclusions": 4582
+      },
+      "sha256": "9958fbf4bf074a69853b49ffad8ac0bfdcb985653168296a93e9e54be3edf185"
+    },
+    "test": {
+      "rows": 30135,
+      "abstracts": 2500,
+      "classes": {
+        "background": 3621,
+        "results": 9713,
+        "conclusions": 4571,
+        "methods": 9897,
+        "objective": 2333
+      },
+      "sha256": "8b5cb06e905625b1548324a3da32afa66a289df96e4de6c043f019ffbd9e680d"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+report,evidence,split,examples,first_model,second_model,first_accuracy_pct,second_accuracy_pct,first_macro_f1,second_macro_f1,accuracy_gain_pp,regressions,gate
+reports/baseline/comparison.json,classical_baseline,test,30135,keyword-rules,tfidf-logistic-regression,36.5223,77.6638,0.365738,0.718588,41.1415,1399,HOLD
+reports/experiments/adapter-validation/comparison.json,real_model,validation,100,base-llm,lora-adapter,21.0,30.0,0.086275,0.279044,9.0,15,HOLD
+reports/experiments/baseline-validation/comparison.json,classical_baseline,validation,100,keyword-rules,tfidf-logistic-regression,44.0,70.0,0.442606,0.695,26.0,6,HOLD
+reports/experiments/final-test/comparison.json,real_model,test,30135,base-llm,lora-adapter,35.1186,81.6161,0.142691,0.760658,46.4974,1339,HOLD
+reports/experiments/training-validation/comparison.json,real_model,validation,100,base-llm,lora-adapter,21.0,74.0,0.086275,0.734487,53.0,4,HOLD
+reports/experiments/training-validation-1000/comparison.json,real_model,validation,1000,base-llm,lora-adapter,22.2,73.0,0.110298,0.728126,50.8,31,HOLD
+reports/fine_tuning/comparison.json,real_model,validation,25,base-llm,lora-adapter,20.0,24.0,0.066667,0.202381,4.0,5,HOLD

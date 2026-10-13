@@ -1,0 +1,29 @@
+{
+  "backend": "hf",
+  "evidence_kind": "real_model",
+  "expected_label": "methods",
+  "base": {
+    "name": "base-llm",
+    "raw_output": "methods",
+    "latency_ms": 650.1205720001053,
+    "input_tokens": 68,
+    "output_tokens": 2,
+    "tokens_per_second": 3.0763524277457814,
+    "confidence": null,
+    "prediction": "methods",
+    "input_truncated": false,
+    "correct": true
+  },
+  "adapted": {
+    "name": "lora-adapter",
+    "raw_output": "background",
+    "latency_ms": 631.6318990000127,
+    "input_tokens": 68,
+    "output_tokens": 2,
+    "tokens_per_second": 3.16640119532652,
+    "confidence": null,
+    "prediction": "background",
+    "input_truncated": false,
+    "correct": false
+  }
+}

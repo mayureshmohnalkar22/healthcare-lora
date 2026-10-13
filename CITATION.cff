@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this project, cite it and the PubMed RCT dataset below."
+title: "Healthcare LoRA: Auditable Medical Research NLP Adaptation"
+type: software
+authors:
+  - family-names: Mohnalkar
+    given-names: Mayuresh Suhas
+version: 0.1.0
+license: MIT
+references:
+  - type: conference-paper
+    title: "PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts"
+    authors:
+      - family-names: Dernoncourt
+        given-names: Franck
+      - family-names: Lee
+        given-names: Ji Young
+    year: 2017
+    url: "https://aclanthology.org/I17-2052/"
